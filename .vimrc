@@ -31,11 +31,11 @@ set autoindent
 set incsearch
 set hlsearch
 
-set cursorline
 
 set number
 
 colorscheme desert
+set cursorline
 
 set autoread
 
