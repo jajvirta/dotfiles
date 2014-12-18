@@ -39,10 +39,8 @@ set cursorline
 
 set autoread
 
-# Mappings
 map <F3> :w<CR>:!python %<CR>
-
-execute pathogen#infect()
+map <F4> :w<CR>:!sh %<CR>
 
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
