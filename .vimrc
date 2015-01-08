@@ -20,6 +20,9 @@ set incsearch		" do incremental searching
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
+command W w !sudo tee % > /dev/null
+
+
 " omat jutskat
 set expandtab
 set tabstop=4
@@ -41,6 +44,8 @@ set autoread
 
 map <F3> :w<CR>:!python %<CR>
 map <F4> :w<CR>:!sh %<CR>
+
+map <F2> :read !date +\%H:\%M<CR>A 
 
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
