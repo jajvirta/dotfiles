@@ -7,7 +7,6 @@ set backspace=indent,eol,start
 
 set nobackup
 set nowritebackup
-set undofile		" keep an undo file (undo changes after closing)
 
 set history=500		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
@@ -46,6 +45,7 @@ map <F3> :w<CR>:!python %<CR>
 map <F4> :w<CR>:!sh %<CR>
 
 map <F2> :read !date +\%H:\%M<CR>A 
+map <F6> :read !date +\%Y-\%m-\%d<CR>A 
 
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
