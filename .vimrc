@@ -52,6 +52,10 @@ map <F6> :read !date +\%Y-\%m-\%d<CR>A
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
 
+inoremap jk <ESC>
+
+let mapleader = "\<Space>"
+
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
