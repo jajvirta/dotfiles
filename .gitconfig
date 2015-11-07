@@ -1,0 +1,14 @@
+[user]
+    name = Jarno Virtanen
+
+[alias]
+    st = status
+    ci = commit --verbose
+    co = checkout
+    di = diff
+    dc = diff --cached
+    aa = add --all
+    pullff = pull --ff-only
+    pullre = pull --rebase
+    l = log --graph --pretty='tformat:%C(yellow)%h%Creset %Cgreen(%ar)%Creset %C(bold blue)<%an>%Creset %C(bold red)%d%Creset %s'
+
