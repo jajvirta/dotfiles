@@ -21,7 +21,7 @@ map Q gq
 
 command W w !sudo tee % > /dev/null
 
-set listchars=tab:>~,nbsp:_,trail:.
+exec "set listchars=tab:\uBB\uBB,nbsp:~,trail:\uB7"
 set list
 
 " omat jutskat
