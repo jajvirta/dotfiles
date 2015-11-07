@@ -24,7 +24,6 @@ command W w !sudo tee % > /dev/null
 exec "set listchars=tab:\uBB\uBB,nbsp:~,trail:\uB7"
 set list
 
-" omat jutskat
 set expandtab
 set tabstop=4
 set shiftwidth=4
