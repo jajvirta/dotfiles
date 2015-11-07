@@ -40,8 +40,13 @@ set number
 
 colorscheme desert
 set cursorline
+augroup CursorLine
+    autocmd!
+    autocmd VimEnter * highlight CursorLine cterm=NONE ctermbg=DarkBlue
+augroup END
 
 set autoread
+
 
 map <F3> :w<CR>:!python %<CR>
 map <F4> :w<CR>:!sh %<CR>
