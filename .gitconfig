@@ -12,3 +12,5 @@
     pullre = pull --rebase
     l = log --graph --pretty='tformat:%C(yellow)%h%Creset %Cgreen(%ar)%Creset %C(bold blue)<%an>%Creset %C(bold red)%d%Creset %s'
 
+[push]
+    default = simple
