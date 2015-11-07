@@ -21,6 +21,8 @@ map Q gq
 
 command W w !sudo tee % > /dev/null
 
+set listchars=tab:>~,nbsp:_,trail:.
+set list
 
 " omat jutskat
 set expandtab
