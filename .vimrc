@@ -64,6 +64,7 @@ map <F2> :read !date +\%H:\%M<CR>A
 map <F6> :read !date +\%Y-\%m-\%d<CR>A 
 
 au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+let g:ctrl_map = '<c-p>'
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
