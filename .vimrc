@@ -2,6 +2,9 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_custom_ignore = '\v[\/](bower_components|node_modules)$'
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
