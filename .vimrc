@@ -56,6 +56,14 @@ augroup END
 
 set autoread
 
+if has('persistent_undo')
+    set undofile
+endif
+
+set undodir=~/vimtmp/.VIM_UNDO_FILES
+set undolevels=5000
+
+
 
 map <F3> :w<CR>:!python %<CR>
 map <F4> :w<CR>:!sh %<CR>
