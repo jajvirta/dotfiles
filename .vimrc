@@ -72,6 +72,9 @@ map <F4> :w<CR>:!sh %<CR>
 map <F2> :read !date +\%H:\%M<CR>A 
 map <F6> :read !date +\%Y-\%m-\%d<CR>A 
 
+nmap <DEL> :nohlsearch<CR>
+nmap S :%s//g<LEFT><LEFT>
+
 au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 let g:ctrl_map = '<c-p>'
 
