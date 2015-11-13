@@ -84,6 +84,8 @@ inoremap <C-U> <C-G>u<C-U>
 
 inoremap jk <ESC>
 
+nnoremap <SPACE>  <PAGEDOWN>
+
 let mapleader = "\<Space>"
 
 
