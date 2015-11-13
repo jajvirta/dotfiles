@@ -44,6 +44,7 @@ set autoindent
 set incsearch
 set hlsearch
 
+set smartcase ignorecase
 
 set number
 
