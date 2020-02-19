@@ -27,6 +27,11 @@ command W w !sudo tee % > /dev/null
 exec "set listchars=tab:\uBB\uBB,nbsp:~,trail:\uB7"
 set list
 
+set noeb vb t_vb=
+
+set dir-=.
+set dir+=/tmp
+
 set enc=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf8,prc
@@ -49,11 +54,11 @@ set smartcase ignorecase
 set number
 
 colorscheme desert
-set cursorline
-augroup CursorLine
-    autocmd!
-    autocmd VimEnter * highlight CursorLine cterm=NONE ctermbg=DarkBlue
-augroup END
+"set cursorline
+"augroup CursorLine
+"    autocmd!
+"    autocmd VimEnter * highlight CursorLine cterm=NONE ctermbg=LightGrey
+"augroup END
 
 set autoread
 
@@ -64,13 +69,14 @@ endif
 set undodir=~/vimtmp/.VIM_UNDO_FILES
 set undolevels=5000
 
+let mapleader = ","
 
-
+map <F2> :w<CR>:!python3.6 %<CR>
 map <F3> :w<CR>:!python %<CR>
 map <F4> :w<CR>:!sh %<CR>
 
-map <F2> :read !date +\%H:\%M<CR>A 
-map <F6> :read !date +\%Y-\%m-\%d<CR>A 
+nnoremap <leader>r :w<CR>:!python %<CR>
+
 
 nmap <DEL> :nohlsearch<CR>
 nmap S :%s//g<LEFT><LEFT>
@@ -86,7 +92,6 @@ inoremap jk <ESC>
 
 nnoremap <SPACE>  <PAGEDOWN>
 
-let mapleader = "\<Space>"
 
 
 " Switch syntax highlighting on, when the terminal has colors
