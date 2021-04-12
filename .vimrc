@@ -71,7 +71,7 @@ set undolevels=5000
 
 let mapleader = ","
 
-map <F2> :w<CR>:!python3.6 %<CR>
+map <F2> :w<CR>:!python3 %<CR>
 map <F3> :w<CR>:!python %<CR>
 map <F4> :w<CR>:!sh %<CR>
 
