@@ -1,5 +1,6 @@
 [user]
 	name = Jarno Virtanen
+	email = jarno.j.virtanen@yle.fi
 
 [alias]
     st = status
@@ -14,3 +15,4 @@
 
 [push]
     default = simple
+    autoSetupRemote = true
